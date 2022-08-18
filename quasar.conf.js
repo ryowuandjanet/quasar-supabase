@@ -50,8 +50,8 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
       env: {
-        SUPABASE_URL: 'https://fiopknivucqeguhjpqdo.supabase.co',
-        SUPABASE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzOTUyMTcwOSwiZXhwIjoxOTU1MDk3NzA5fQ.prM0rQ-qe7mHLFgm_508rCaC47lVJpx7YQqFnPUsHVs'
+        SUPABASE_URL: 'https://dmajemjniayrnomuhile.supabase.co',
+        SUPABASE_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtYWplbWpuaWF5cm5vbXVoaWxlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjAzOTcxNjksImV4cCI6MTk3NTk3MzE2OX0.BPajTDWQl9cNtftQB9fsmp5j_mhACgsqgXmdTsp9FWM'
       },
       // transpile: false,
       // publicPath: '/',
@@ -72,10 +72,10 @@ module.exports = configure(function (ctx) {
 
       // https://quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack (chain) {
-        chain.plugin('eslint-webpack-plugin')
-          .use(ESLintPlugin, [{ extensions: ['js', 'vue'] }])
-      }
+      // chainWebpack (chain) {
+      //   chain.plugin('eslint-webpack-plugin')
+      //     .use(ESLintPlugin, [{ extensions: ['js', 'vue'] }])
+      // }
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
